@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "32290219152",
+    "firebase_url": "https://gocloud-1bb7b.firebaseio.com",
+    "project_id": "gocloud-1bb7b",
+    "storage_bucket": "gocloud-1bb7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32290219152:android:f49be151748c08eb",
+        "android_client_info": {
+          "package_name": "com.gocloud.gocloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32290219152-19f97520jhpkjrmc21qdt7kaqjib0guf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvOg7mL0BnMxzTXQ3s29FgXUUaH_2wnoc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
