@@ -74,7 +74,7 @@ class _MemberApprovalState extends State<MemberApproval> {
                   padding: EdgeInsets.all(_paddingItem),
                   itemCount: testcode.length,
                   itemBuilder: (BuildContext context, int position) {
-                    bool alredy = _saved.contains(position);
+                    bool already = _saved.contains(position);
 
                     return Padding(
                         padding: EdgeInsets.only(bottom: 12.0),
@@ -82,7 +82,7 @@ class _MemberApprovalState extends State<MemberApproval> {
                           overflow: Overflow.clip,
                           children: <Widget>[
                             WidgetShowDetails(
-                              height: alredy ? heightBoxDetails : 0.0,
+                              height: already ? heightBoxDetails : 0.0,
                               width: _fullWidth,
                               color: Color(0xFF1c1c50),
                               note: "${testnote[position]}",
@@ -139,7 +139,7 @@ class _MemberApprovalState extends State<MemberApproval> {
                                                       "V_Name:${testname[position]}"),
                                                 ),
                                                 decoration: new BoxDecoration(
-                                                    color: alredy
+                                                    color: already
                                                         ? color1
                                                         : Colors.white,
                                                     borderRadius:
@@ -171,7 +171,7 @@ class _MemberApprovalState extends State<MemberApproval> {
                                                             child: Icon(
                                                               Icons
                                                                   .remove_red_eye,
-                                                              color: alredy
+                                                              color: already
                                                                   ? color1
                                                                   : Colors
                                                                       .white,
@@ -179,7 +179,7 @@ class _MemberApprovalState extends State<MemberApproval> {
                                                             onTap: () {
                                                               showDetails(
                                                                   position);
-                                                              if (alredy) {
+                                                              if (already) {
                                                                 _saved.remove(
                                                                     position);
                                                               } else {
@@ -191,7 +191,7 @@ class _MemberApprovalState extends State<MemberApproval> {
                                                 ),
                                               ),
                                               decoration: new BoxDecoration(
-                                                  color: alredy
+                                                  color: already
                                                       ? Colors.white
                                                       : color1,
                                                   borderRadius: new BorderRadius
